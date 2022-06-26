@@ -1,0 +1,27 @@
+1. Print Digit from the Number
+N = 12345
+Print 
+1
+2
+3
+4
+5
+Hint : One , Ten , Hundred, Thousand Place
+
+2. Reverse a Number
+N = 123
+321
+Hint : Number Shift to the Place  (One , Ten , Hundred, Thousand Place)
+
+
+3. Prime Number
+N = 7
+Hint : % 
+
+4. Armstrong Number
+153
+1 ^3  + 5 ^ 3 + 3 ^ 3
+
+
+5. Decimal to Binary Convert 
+65 —> Binary Number
