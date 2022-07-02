@@ -1,0 +1,8 @@
+Sum of Digit (Even Place , Odd Place ) 
+    3751 function must return the result in array list.
+
+	 Sum of Series
+	 1 ^ 1 + 2 ^ 2 + 3 ^ 3 + 4 ^ 4 + N ^ N
+	
+	Sum of Series 
+	1! + 2 ! + 3 ! + 4 ! + N!
