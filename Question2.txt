@@ -1,0 +1,5 @@
+Q1. Array Search Element
+Q2. Search Element from Last
+Q3. Find the Number of time element occur in array
+Q4. Find and Replace Elemnent from the Array
+Q5. 2*pi + 3 * pi + 5 * pi output : 2 * 3.14 + 3 * 3.14 + 5 * 3.14
