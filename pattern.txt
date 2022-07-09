@@ -1,0 +1,22 @@
+A
+AB
+ABC
+ABCD
+ABCDE
+
+A
+BB
+CCC
+DDDD
+EEEEE
+
+1
+23
+456
+78910
+
+  *
+ * *
+* * * 
+
+
