@@ -1,0 +1,56 @@
+1. Permuation of a String (Signature is void perm(String str, String result){})
+2. Create a Function to create a clone of a String 
+3. Convert a String into Proper Case e.g String name = "ram KUMAR sHArMA" output : Ram Kumar Sharma
+4. Crack a Password, Given a password length , the number can be 0 to 9
+e.g password length is 2 so password can be 11 to 99.
+e.g password length is 3 so password can be 100 to 999
+Maximum Password length is 4.
+
+5. Print the Following Pattern
+*************
+*            *
+*            *
+*            *
+*            *
+************
+
+
+6. Write a program to find out the sum of an A.P. series.
+Test Data : 
+Input the starting number of the A.P. series: 1 
+Input the number of items for the A.P. series: 10 
+Input the common difference of A.P. series: 4 
+Expected Output :
+The Sum of the A.P. series are : 
+1 + 5 + 9 + 13 + 17 + 21 + 25 + 29 + 33 + 37 = 190
+
+7. WAP to print the first and last digit of a number
+
+8. Lucky Number
+Problem Statement
+Implement a program to check whether a given number is a lucky number.
+A lucky number is a number whose sum of squares of every even-positioned digit (starting from the second position) is a multiple of 9.
+E.g. - 1623 = 62+32 = 45 is a multiple of 9 and hence is a lucky number.
+
+9. Seed Number
+Implement a program to find out whether a number is a seed of another number.
+A number X is said to be a seed of number Y if multiplying X by its every digit equates to Y.
+E.g.: 123 is a seed of 738 as 123*1*2*3 = 738
+
+10. Favourite Number, Among all the digits from 0—9 in a number,Amit likes 5 the most. So in Given numbers Amit want to find out the 5 present how many times in given number.
+e.g
+Input: 6 times
+12345
+12345
+345654
+345654
+55555
+55555
+Output
+1
+1
+2
+2
+5
+5
+
