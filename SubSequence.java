@@ -2,6 +2,18 @@ import java.util.ArrayList;
 
 public class SubSequence {
 
+    static void getAllSubSeqV2(String str, String result){
+        if(str.length()==0){
+            System.out.print(result+" , ");
+            return ;
+        }
+
+        char singleChar = str.charAt(0);
+        String subString = str.substring(1);
+        getAllSubSeqV2(subString, result); // Not take it
+        getAllSubSeqV2(subString, result + singleChar); // Take It
+    }
+
     static ArrayList<String> getAllSubSeq(String str){
         // Termination Case
         if(str.length() ==0){
@@ -22,7 +34,9 @@ public class SubSequence {
         return finalResult;
     }
     public static void main(String[] args) {
-        ArrayList<String> subSeq = getAllSubSeq("amit");
-        System.out.println(subSeq);
+       // ArrayList<String> subSeq = getAllSubSeq("amit");
+       // System.out.println(subSeq);
+       getAllSubSeqV2("amit", "");
+       System.out.println();
     }
 }
