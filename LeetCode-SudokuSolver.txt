@@ -1,0 +1,77 @@
+class Solution {
+    static char [][] board ;
+    public void solveSudoku(char[][] boardParam) {
+        board = boardParam;
+        solveIt(0,0);
+    }
+    
+    
+    static final int SIZE = 9;
+       
+        static boolean isPresentInSubGrid(int row, int col, char val){
+            int startRow = row - row % 3;
+            int startCol = col - col%3;
+            for(int i = startRow; i<startRow+3; i++){
+                for(int j = startCol; j<startCol+3; j++){
+                    if(board[i][j]== val){
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        static boolean isPresentInRow(int row, char val){
+            for(int col = 0 ; col<SIZE; col++){
+                if(board[row][col]==val){
+                    return true;
+                }
+            }
+            return false;
+        } 
+        static boolean isPresentInCol(int col, char val){
+            for(int row = 0 ; row<SIZE; row++){
+                if(board[row][col]==val){
+                    return true;
+                }
+            }
+            return false;
+        }      
+
+        static boolean isOkToPlaceTheValue(int row , int col, char val){
+            return !isPresentInRow(row, val) && !isPresentInCol(col, val) && !isPresentInSubGrid(row, col, val);
+        }    
+        static  boolean solveIt(int row, int col){
+            // Edge Case
+            if(col == SIZE){
+                col = 0;
+                row = row + 1;
+            }
+            // Termination Case 
+            if(row == SIZE){
+               
+                return true; // Sudoku Solve 
+            }
+
+            // Is Value in cell is Empty or Not
+            if(board[row][col]!='.'){
+                // Move to Next cell
+                return solveIt(row, col+1);
+            }
+            // Here Cell is Empty 
+            for(char i = '1'; i<='9' ; i++){
+                if(isOkToPlaceTheValue(row, col  , i)){
+                    // We Place the Value
+                    board[row][col] = i;
+                    boolean result =  solveIt(row, col+1);
+                    if(result){
+                        // Sudoku Solve 
+                        return true;
+                    }
+                    // result value is false
+                    board[row][col] = '.'; // Undo the changes
+                }
+            }
+            return false; // Sudoku is not solve
+        }
+
+}
